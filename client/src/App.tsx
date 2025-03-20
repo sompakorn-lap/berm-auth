@@ -3,6 +3,7 @@ import HomePage from "./Home.page";
 import { Icon } from "@iconify/react";
 import ReactQueryProvider from "./libs/react-query/ReactQueryProvider";
 import UserPage from "./features/user/container/UserPage";
+import Login from "./features/auth/Login";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage/>} />
                 <Route path="/user" element={<UserPage/>} />
+                <Route path="/login" element={<Login/>} />
             </Routes>
           </BrowserRouter>
         </main>

@@ -6,7 +6,7 @@ import staticPlugin from "@elysiajs/static";
 
 const PORT = parseInt(process.env.PORT as string) || 3000;
 
-connectDatabase();
+// connectDatabase();
 const app = new Elysia()
   .use(staticPlugin({
     assets: "../client/dist",
